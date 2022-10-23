@@ -1,8 +1,7 @@
 {
   "scripts": {
     "start" : "node backend/app.js",
-    "server": "nodemon backend/app.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix shopping-app && npm run build --prefix shopping-app"
+    "server": "nodemon backend/app.js"
 
   },
   
