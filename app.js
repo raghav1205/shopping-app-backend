@@ -24,8 +24,9 @@ mongoose.connect(uri, { useNewUrlParser: true})
         .catch(err => console.error(err))
 
 const User = require('./models/User')
-
-
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
 // Routes
 const authRoutes = require('./routes/authRoutes')
 const productRoutes = require('./routes/productRoutes')
